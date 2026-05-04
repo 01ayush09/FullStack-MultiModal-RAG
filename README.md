@@ -1,10 +1,10 @@
-# 📚 Fullstack Multimodal RAG — Windows Setup Guide
+#  Fullstack Multimodal RAG — Windows Setup Guide
 
 A full-stack RAG (Retrieval-Augmented Generation) Q&A system that processes PDF documents (text, images, tables) and answers questions using Gemini or Ollama.
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 fullstack-multimodal-rag/
@@ -28,7 +28,7 @@ fullstack-multimodal-rag/
 
 ---
 
-## ✅ Prerequisites
+##  Prerequisites
 
 Install these **before** running anything:
 
@@ -40,7 +40,7 @@ Install these **before** running anything:
 
 ---
 
-## 🚀 How to Run (Step by Step)
+##  How to Run (Step by Step)
 
 ### Step 1 — Get a Gemini API Key (Free)
 1. Go to https://aistudio.google.com/apikey
@@ -72,7 +72,7 @@ This will:
 - Create vector embeddings using Ollama (`nomic-embed-text`)
 - Index everything into OpenSearch
 
-⚠️ **This takes 5–20 minutes** on first run.  
+ **This takes 5–20 minutes** on first run.  
 After that, you don't need to run it again unless you add new documents.
 
 ### Step 5 — Ask Questions!
@@ -80,7 +80,7 @@ Open http://localhost:7860 and start asking questions about RAG.
 
 ---
 
-## 🔧 Optional: Local Ollama Setup
+##  Optional: Local Ollama Setup
 
 To use the **Ollama** model option in the UI (runs 100% locally, no internet needed):
 
@@ -93,7 +93,7 @@ ollama serve
 
 ---
 
-## 🔍 Search Methods Explained
+##  Search Methods Explained
 
 | Method | How it works |
 |--------|-------------|
@@ -103,7 +103,7 @@ ollama serve
 
 ---
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 **"Docker not found"** → Install Docker Desktop and make sure it's started (whale icon in system tray)
 
@@ -119,7 +119,7 @@ ollama serve
 
 ---
 
-## 📊 Architecture
+##  Architecture
 
 ```
 PDF Document
@@ -143,7 +143,7 @@ User Query ───────────────────────
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - The `.env` file stores your API key — **never share this file**
 - OpenSearch data persists in a Docker volume across restarts
